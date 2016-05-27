@@ -18,11 +18,12 @@
                                             .Properties[typeof(HttpListener).FullName];
             httpListener
                 .AuthenticationSchemes =
-                        AuthenticationSchemes
-                              .IntegratedWindowsAuthentication
+                       //AuthenticationSchemes
+                         //     .IntegratedWindowsAuthentication
                         ////    | AuthenticationSchemes.Negotiate
                         //    | 
-                            |AuthenticationSchemes.Ntlm;
+                            //|
+                            AuthenticationSchemes.Ntlm;
 
             //appBuilder.UseCors()
 
